@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Halo fans insan</h1>
+        <p>Please enter your name to see your personalized message.</p>
+        
+        <!-- Input for the user's name -->
+        <input type="text" id="userName" placeholder="Enter your name...">
+        
+        <!-- Button to redirect to the message page -->
+        <button onclick="redirectToMessagePage()">Submit</button>
+    </div>
+
+    <script>
+        function redirectToMessagePage() {
+            // Get the user's name
+            const userName = document.getElementById('userName').value;
+
+            // Redirect to the message page with the name as a URL parameter
+            if (userName) {
+                window.location.href = `message.html?name=${encodeURIComponent(userName)}`;
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+    </script>
+</body>
+</html>

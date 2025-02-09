@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="paper">
+        <h1>Dari orang paling ganteng sedunia</h1>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Get the name from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const userName = urlParams.get('name');
+
+        // Display the personalized message using a switch statement
+        const messageElement = document.getElementById('message');
+        if (userName) {
+            let message;
+            switch (userName.toLowerCase()) {
+                case "regina":
+                    message =` Halo kak re, thank you so much for being such a good leader! aku inget banget waktu kak re khawatir soalnya BD belum ada staff, but here we are,
+                    dengan segala rintangan dan hambatan (anjay) we eventually made it. anyway i am beyond gratefull to become your kids and have you as a leader. sorry banget aku cuma bisa kasih perintilan ohsome soalnya
+                    jadwal kuliah lagi padet banget jadi gak sempet beli yang aneh aneh, but hopefully bermanfaat HAHAHAHAHAHA. LAST WORD THANK YOU KAK REGINAAA`;
+                    break;
+                case "garebind":
+                    message = `sebenernya gw malas tulis sugar cubes buat lu, TAPI THANK YOU SO MUCH UDAH MAU JADIIN GW TEMEN LU
+                    DIANTARA TEMEN TEMEN LU YANG LAIN DAN BANTU KALO GW LAGI ADA BUTUH. I OWE YOU SO MUCH. wish untuk lu semoga lu mau diajak nonton indonesia open 2025
+                    di istora senayan AAMIIN, let me know kalo lu perlu apapun`;
+                    break;
+                case "kimi":
+                    message = `halo kimi, temen aiesec pertama gw di aiesec, thank you so much udah jadi temen baik buat gw di aiesec maupun 
+                    di luar aiesec, thank you udah mau ajarin gw pake mesin cuci, masak, even cara pake setrika, tetap jadi kimi yang gw dan semua teman
+                    teman lu kenal, semangat juga next term di aiesec, kalo ada perlu apa apa let me know aja meskipun kayanya gw juga ga berguna HAHAHAHA, anyway
+                    thank you udah jadi temen baik di aiesec`;
+                    break;
+                case "nata":
+                    message = `halo nataa, staff paling gcp, jujur dari awal gw takut sama lu karena lu keliatan orang nya serius banget
+                    dan emg iya HAHAHAHA, anyway thank you so much udah mau jadi staff gw meskipun gw banyak kurang nya, but i hope segala kekurangan gw bisa 
+                    jadi pelajaran bagus waktu lu sekarang jadi VP, gw titip business development dan anak anak yang polos ini, gw percaya lu bisa. 
+                    let me know kalo perlu bantuan. once again sorry and thank you`;
+                case "imel":
+                    message = `imell, lu technically orang pertama yang gw kenal di PU, kalo lu inget gw pernah chat lu di telegram sebelum masuk kampus HAHAHAHHA
+                    thank you so much udah jadi staff gw, meskipun mungkin banyak ekspektasi yang ga sesuai selama bekerja di aiesec, tapi gw harap lu bisa belajar banyak dan
+                    hal yang lu pelajari bisa lu implementasikan in your life after aiesec, once again sorry and thank you imell`;
+                case 'shafa':
+                    message = `halo shafaa, thsnk you udah membersamai gw di BD dari awal bahkan sebelum BD ada anggota, gw ingat banget waktu lu curhat masalah
+                    anak anak lu di SS, but eventually you made it, thank you for once become my partner to share. semangat life after aiesec`;
+                case 'jo':
+                    message = `jpnathannn teman lanang gw satu satu nya di BD, di awal jujur gw kurang suka sama lu soaknya gak komunikatif, tapi as time goes by
+                    emg tetep gak komunikatif, enggala bercanda. thank you jo udah jadi temen gw di BD kalo gaada lu gw bakal awakward banget soalnya gw cowo satu satunya.
+                    semangat life after aiesec nya`;
+                case 'caca':
+                    message = `halo pacar taeil, kak caca thank you udah mau jadi teman di BD meskipun kak caca UDAH TUA tapi tetep mau bertman dengan gw 
+                    yang MASIH MUDA ini, meskipun kehidupan kak caca udah tidak akan sama lagi soalnya udah gaada gw, but semangat life after aiesec nya`;
+                case 'nana':
+                    message = `nankoot, thank you for once being a good teammates, meskipun lu selalu tidak setuju dengan jokes gw tapi gw
+                    yakin di hati lu lu ketawa kan HAHAHAHA, semangat life after aiesec nya, let me know kalo jadi deketin zaki`;
+                case 'briant':
+                    message = `briant, teman badminton gw yang kalah mulu, gw titip business development dan orang orang di dalam nya yaa, semoga lu bisa dapet pengalaman
+                    dan skills yang bisa lu implementasikan di dunia kerja nanti, dan satu lagi jangan lupa kalahin gw HAHAHAHAHA`;
+                case 'vincent':
+                    message = `halo vincent, orang yang pertama kali gw interiew, gw titip busniess development dan orang orang di dalam nya yaa, semoga lu bisa dapet pengalaman 
+                    dan skills yang bisa lu implementasikan di dunia kerja nanti, nanti kalo ada angkatan 23 yang gak beli merch bilaang aja ke gw nanti gw suruh mereka beli HAHAHA`;
+                case 'kalvin':
+                    message = `kalvin, mas mas bungkus ayam, gw titip business development dan orang orang di dalam nya yaa, semoga lu bisa dapat pengalaman dan skills yang bisa
+                    lu implementasikan di dunia kerja nanti, minimal revenue financial 100jt kalo engga video lu bungkus ayam gw sebar`;
+                case 'adnan':
+                    message = `halo adnan, murid english survival gw, titip business development dan orang orang di dalam nya yaa, semoga lu bisa dapat pengalaman dan skills yang bisa
+                    lu implementasikan di dunia kerja nanti, jangan lupa masuk kelas english dan kerjain summative test HAHAHAHA`;
+                case 'vio':
+                    message = `halo vioo, cici delser paling GCP, aku titip business development dan orang orang nya yaa, semoga kamu bisa dapat pengalaman dan skills yang bisa
+                    kamu implementasikan di dunia kerja nanti, semangat revenue 100jt kalo kalvin ga bener bilang aja ke aku nanti aku gebuk HAHAHAHA`;
+                case 'chei':
+                    message = `halo cheii, orang paling pendiam di BD, aku titip business development dan orang orang nya yaa, semoga kamu bisa dapat pengalaman dan skills yang bisa
+                    kamu implementasikan di dunia kerja nanti, semangat nanti jualan merch nyaa, kalo vincent ga bener bilang ke aku aja nanti aku gebuk `;
+                case 'dilla':
+                    message = `dilla, ini upin ipin sama diza, aku titip business development dan orang orang nya yaa, semoga kamu bisa dapat pengalaman dan skills yang bisa
+                    kamu implementasikan di dunia kerja nanti, semngat revenue 100jt kalo kalvin ga bener bilang aja ke aku nanti aku gebuk HAHAHA`;
+                case 'diza':
+                    message = `diza, ini upin ipin sama dilla, aku titip business development dan orang orang nya yaa, semoga kamu bisa dapat pengalaman dan skills yang bisa
+                    kamu implementasikan di dunia kerja nanti, semangat nanti jualan merch nyaa, kalo vincent ga bener bilang ke aku aja nanti aku gebuk`;
+                case 'zahwa':
+                    message = `halo kak zahwa, orang yang pernah nangiS gara gara gw HAHAHAHAHA, jujur waktu itu shock berat HAHAHA, anyway thank you udah jadi teman di aiesec
+                    bahkan waktu itu jadi teman lomba tapi malah rugi belasan juta HAHAHAHA, semnagat life after aiesec nya HAHAHA`;
+                case 'issa':
+                    message = `halo kak issaaa, mentor probies paling WOW, kalo boleh jujur kayanya salah satu reason aku bisa enjoy di aiesec karena dikenalin dulu ke kak issa lewat
+                    probation, thank you so much udah jadi teman di aiesec dan kamarnya sering dijadiin basecamp BD dulu, semangat life after aiesec nya, bismillah moon chicken HAHAHHA`;
+                case 'syeh':
+                    message = `syeh nafill, fans gw, thank you so much udah jadi teman baik gw di aiesec, dari awal probation sampe sekarang kalo ketemu pasti aja ada gebrakan baru dari lu,
+                    once again thank you so much udah mau jadi teman gw. semangat life after aiesec nya, let me knoe kalo lu perlu apapun `;
+                case 'fahri':
+                    message = `fahri, nangin mulu lu, gw yakin lu waktu gala sebenernya mau free mic kan, tapi lu takut nangis HAHAHAHA, anyway thank you so much udah jaid teman gw dari awal probation
+                    sampe sekarang, semangat life after aiesec nya, let me know kalo lu perlu apa pun`;
+                case 'alex':
+                    message = `alex, teman pertama gw di aiesec, sebernya gw malas banget tulis sugar cubes ini karena lu ngeselin banget anj, anyway thank you udah mau jadi temen gw di aiesec ataupun di luar aiesec,
+                    jangan so ngartis lu`;
+                case 'monica':
+                    message = `cimonnn, mana oleh oleh dari taiwan?, thank you udah jadi teman yang baik selama di aiesec bahkan kita pernah kali jadi tim lomba meskipun kalah HAHAHAHAHA, anyway tahnk you cimon
+                    suka kasih petuah dan nasihan (anjay) ke anak muda ini HAHAHAHA, last word jangan lupa blibli ya HAHAHAHAHA `;
+                default:
+                    message = `Hello, ${userName}! Here is your special message.`;
+            }
+            messageElement.textContent = message;
+        } else {
+            messageElement.textContent = "No name provided. Please go back and enter your name.";
+        }
+    </script>
+</body>
+</html>
