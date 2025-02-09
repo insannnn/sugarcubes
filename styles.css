@@ -37,7 +37,7 @@ p {
 }
 
 input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
@@ -57,4 +57,26 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/image3.jpg') no-repeat center center fixed; /* Adjust path if needed */
+    background-size: cover; /* Ensures image covers the screen */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Adds transparency to make text readable */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
